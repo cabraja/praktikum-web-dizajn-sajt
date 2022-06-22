@@ -61,6 +61,31 @@ MAIN
 	font-size: 1rem;
 	margin-bottom: 14px;
 }
+@media only screen and (max-width: 575px) {
+	#offers-main-center .row {
+		display: flex;
+		flex-direction: column;
+	}
+	#offers-main-center .col-4,
+	#offers-main-center .col-8 {
+		width: 100%;
+		max-width: unset;
+		margin-bottom: 20px;
+	}
+	#offers-main-center .col-lg-6 {
+		margin-bottom: 8px;
+		margin-top: 8px;
+	}
+	#offers-main-center button {
+		width: 100%;
+	}
+}
+
+/* 
+===============================================================
+BANNER
+===============================================================
+*/
 .banner-students {
 	color: white;
 }
@@ -75,9 +100,25 @@ MAIN
 	margin-right: 20px;
 }
 
-.card-body {
+/* 
+==================================================================
+NEW DESTINATIONS
+==================================================================
+ */
+
+#new-destinations .card-body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+}
+
+/* 
+==============================================================
+FAQ
+===================================================================
+ */
+#FAQ .btn:focus {
+	box-shadow: none;
+	text-decoration: none;
 }
