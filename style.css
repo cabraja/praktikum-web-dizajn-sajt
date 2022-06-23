@@ -159,6 +159,26 @@ footer .nav-link:hover {
 
 /* 
 ==================================================
-ALL OFFERS
+CONTACT
 ==================================================
  */
+#contact-landing {
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #476ec2;
+	border-radius: 0px;
+	color: white;
+	margin-bottom: 0px;
+}
+#contact-main-image {
+	background-image: url("./assets/img/contact-main.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.form-group {
+	margin-bottom: 1em;
+}
+
+.red-star {
+	color: red;
+}

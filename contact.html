@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>USA Travel | About Us</title>
+		<link rel="icon" type="image/x-icon" href="/assets/img/us-favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/86a7bb3b6f.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav
+			class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-5 py-2"
+		>
+			<a class="navbar-brand" href="index.html"
+				><span style="color: #3c3b6e">USA</span>
+				<span style="color: rgb(150, 150, 150)">Tra</span
+				><span style="color: #b22234">vel</span></a
+			>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div
+				class="collapse navbar-collapse justify-content-end"
+				id="navbarSupportedContent"
+			>
+				<ul class="navbar-nav mr-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"
+							>Home <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="offers.html">Offers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="aboutus.html">About Us</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a
+							tabindex="0"
+							class="btn"
+							role="button"
+							data-placement="bottom"
+							data-toggle="popover"
+							data-trigger="focus"
+							data-content="+381 23 456 789"
+							><i class="fa-solid fa-phone"></i
+						></a>
+					</li>
+					<li class="nav-item">
+						<a
+							tabindex="0"
+							class="btn"
+							role="button"
+							data-placement="bottom"
+							data-toggle="popover"
+							data-trigger="focus"
+							data-content="usatravel@yahoomail.com"
+							><i class="fa-solid fa-envelope"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container py-5">
+			<h2 class="text-center">Contact Us</h2>
+			<hr />
+
+			<form class="mt-5">
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="firstName"
+							>First Name <span class="red-star">*</span></label
+						>
+						<input type="text" class="form-control" id="firstName" />
+					</div>
+					<div class="form-group col-md-6">
+						<label for="lastName"
+							>Last Name <span class="red-star">*</span></label
+						>
+						<input type="text" class="form-control" id="lastName" />
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="inputCity">City (or the one closest to you)</label>
+						<input type="text" class="form-control" id="inputCity" />
+					</div>
+					<div class="form-group col-md-4">
+						<label for="inputCountry"
+							>Country (West EU only) <span class="red-star">*</span></label
+						>
+						<select id="inputCountry" class="form-control">
+							<option selected>Choose...</option>
+							<option>Ireland</option>
+							<option>UK</option>
+							<option>France</option>
+							<option>Belgium</option>
+							<option>Netherlands</option>
+							<option>Spain</option>
+							<option>Portugal</option>
+							<option>Andorra</option>
+							<option>Luxemburg</option>
+							<option>Switzerland</option>
+						</select>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="inputZip">Zip Code</label>
+						<input type="text" class="form-control" id="inputZip" />
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="inputAddress">Address</label>
+					<input
+						type="text"
+						class="form-control"
+						id="inputAddress"
+						placeholder="Address"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="inputMessage"
+						>Your Message <span class="red-star">*</span></label
+					>
+					<textarea class="form-control" id="inputMessage" rows="3"></textarea>
+				</div>
+
+				<fieldset class="form-group row">
+					<legend class="col-form-label col-sm-1 float-sm-left pt-0">
+						Gender
+					</legend>
+					<div class="col-sm-10">
+						<div class="form-check">
+							<input
+								class="form-check-input"
+								type="radio"
+								name="genderRadio"
+								id="inputMale"
+								value="Male"
+								checked
+							/>
+							<label class="form-check-label" for="inputMale"> Male </label>
+						</div>
+						<div class="form-check">
+							<input
+								class="form-check-input"
+								type="radio"
+								name="genderRadio"
+								id="inputFemale"
+								value="Female"
+							/>
+							<label class="form-check-label" for="inputFemale"> Female </label>
+						</div>
+					</div>
+				</fieldset>
+
+				<button
+					type="button"
+					id="submit-form"
+					data-toggle="modal"
+					data-target="#myModal"
+					class="btn btn-primary w-100 d-block mx-auto"
+				>
+					Send Message
+				</button>
+			</form>
+		</div>
+
+		<footer class="container-fluid mt-0 py-5">
+			<div class="container">
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Disabled</a>
+					</li>
+				</ul>
+				<hr class="bg-secondary" />
+				<h6 class="text-center text-white mb-0">Mihajlo Cabraja 52/20</h6>
+			</div>
+		</footer>
+
+		<!-- ============================ MODAL ==================================== -->
+		<div class="modal" id="myModal" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Message sent!</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>Thank you for contacting us. We will get to you shortly.</p>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-dismiss="modal"
+						>
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"
+	></script>
+	<script>
+		// Initialize tooltip component
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+
+		// Initialize popover component
+		$(function () {
+			$('[data-toggle="popover"]').popover();
+		});
+
+		$(".popover-dismiss").popover({
+			trigger: "focus",
+		});
+	</script>
+</html>
