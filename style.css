@@ -6,6 +6,19 @@
 	src: url(./assets/font/PaybAck.ttf);
 }
 
+.btn-primary {
+	background-color: #b22234;
+	border-color: #b22234;
+}
+.btn-primary:hover {
+	background-color: #d44a5a;
+	border-color: #d44a5a;
+}
+.btn-primary:focus {
+	background-color: #d44a5a;
+	border-color: #d44a5a;
+}
+
 /* 
 =====================================================
 NAV
@@ -61,6 +74,11 @@ MAIN
 	font-size: 1rem;
 	margin-bottom: 14px;
 }
+.list-group-item.active {
+	background-color: #b22234;
+	border-color: #b22234;
+}
+
 @media only screen and (max-width: 575px) {
 	#offers-main-center .row {
 		display: flex;
@@ -121,4 +139,20 @@ FAQ
 #FAQ .btn:focus {
 	box-shadow: none;
 	text-decoration: none;
+}
+
+/* 
+===============================================
+FOOTER
+===============================================
+*/
+footer {
+	background-color: #262633;
+}
+footer .nav-link {
+	transition: 0.2s;
+	font-size: 1rem;
+}
+footer .nav-link:hover {
+	color: #476ec2;
 }
